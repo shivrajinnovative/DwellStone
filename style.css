@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,700&display=swap");
 body {
   font-family: "Cabin", sans-serif;
   font-optical-sizing: auto;
@@ -24,85 +24,125 @@ p {
 header .logo {
   height: 100px;
 }
-
-
-.hero{
-    background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('./asset/background/header.png');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hero h1{
-    font-size: 55px;
-    font-family: "DM Sans", sans-serif;
-    letter-spacing: 2px;
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./asset/background/header.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
 }
-.about p{
+.heading {
+  background-color: #8a4a42;
+  color: white;
+  padding: 5px 50px;
+  display: inline-block;
+  border-radius: 20px 20px 0 0;
+}
+header {
+  position: relative;
+}
+.navbar {
+  position: absolute;
+  z-index: 99;
+  top: 120px;
+  box-shadow: 0 5px 10px -5px black;
+  left: 6%;
+}
+@media (max-width:768px){
+  .navbar{
+    left: 4%;
+  }
+}
+
+@media (max-width: 500px) {
+  .heading {
+    padding: 10px 15px;
+
+    font-size: 18px;
+  }
+  .navbar{
+    left: 0 !important;
+  top: 90px;
+  }
+}
+/* ////////////////////////////////// index //////////////////////////////  */
+
+.hero h1 {
+  font-size: 55px;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 2px;
+}
+.about p {
   text-align: justify;
 }
-.serviceCard{
-height: 300px;
-overflow: hidden;
-position: relative;
-margin: 10px 0;
+.serviceCard {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 10px 0;
 }
-.serviceCard img{
+.serviceCard img {
   position: absolute;
-height: 100%;
-width: 100%;
-object-fit: cover;
-left: 0;
-z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  left: 0;
+  z-index: -1;
 }
-.serviceCard div{
+.serviceCard div {
   height: 100%;
   width: 100%;
   background-color: rgba(113, 41, 32, 0.8);
   position: relative;
   top: 100%;
-  transition: all .2s;
+  transition: all 0.2s;
 }
-.serviceCard p{
+.serviceCard p {
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   border-bottom: 1px solid white;
 }
-.serviceCard:hover div{
+.serviceCard:hover div {
   top: 0;
 }
-.serviceOffering div:nth-child(1) .serviceCard{
+.serviceOffering div:nth-child(1) .serviceCard {
   border-radius: 30px 0 0 0;
 }
-.serviceOffering div:nth-child(3) .serviceCard{
+.serviceOffering div:nth-child(3) .serviceCard {
   border-radius: 0 30px 0 0;
 }
-.serviceOffering div:nth-child(4) .serviceCard{
-  border-radius:  0 0 0 30px;
+.serviceOffering div:nth-child(4) .serviceCard {
+  border-radius: 0 0 0 30px;
 }
-.serviceOffering div:nth-child(6) .serviceCard{
+.serviceOffering div:nth-child(6) .serviceCard {
   border-radius: 0 0 30px 0;
 }
-.about{
-  background: linear-gradient(rgba(138, 74, 66, .99),rgba(138, 74, 66, .9)) ,url('./asset/background/blueprint.png');
+.about {
+  background: linear-gradient(rgba(138, 74, 66, 0.99), rgba(138, 74, 66, 0.9)),
+    url("./asset/background/blueprint.png");
   background-size: 100% 100%;
 }
-.aboutImg{
+.aboutImg {
   position: absolute;
   height: 80px;
   width: 80px;
   right: 10%;
   bottom: -5%;
 }
-.client img{
-filter: grayscale(100);
-height: 40px;
-margin: 10px;
+.client img {
+  filter: grayscale(100);
+  height: 40px;
+  margin: 10px;
 }
-@media (max-width:500px){
-  
-  .serviceCard{
+@media (max-width: 500px) {
+  .serviceCard {
     height: 150px !important;
   }
 }
@@ -111,26 +151,200 @@ margin: 10px;
   header .logo {
     height: 70px;
   }
-  .serviceCard{
+  .serviceCard {
     height: 200px;
   }
-  .serviceOffering div:nth-child(3) .serviceCard{
+  .serviceOffering div:nth-child(3) .serviceCard {
     border-radius: 0;
   }
-  .serviceOffering div:nth-child(4) .serviceCard{
-    border-radius:  0;
+  .serviceOffering div:nth-child(4) .serviceCard {
+    border-radius: 0;
   }
-  .serviceOffering div:nth-child(1) .serviceCard{
+  .serviceOffering div:nth-child(1) .serviceCard {
     border-radius: 30px 0 0 0;
   }
-  .serviceOffering div:nth-child(2) .serviceCard{
+  .serviceOffering div:nth-child(2) .serviceCard {
     border-radius: 0 30px 0 0;
   }
-  .serviceOffering div:nth-child(5) .serviceCard{
-    border-radius:  0 0 0 30px;
+  .serviceOffering div:nth-child(5) .serviceCard {
+    border-radius: 0 0 0 30px;
   }
-  .serviceOffering div:nth-child(6) .serviceCard{
+  .serviceOffering div:nth-child(6) .serviceCard {
     border-radius: 0 0 30px 0;
   }
-  
 }
+
+/* ///////////////////////////////// ABOUT /////////////////////////////////////////// */
+
+.dashed-border {
+  border: 2px dashed #ccc;
+  padding: 40px;
+  position: relative;
+  margin: 20px;
+  height: 400px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .number {
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    color: white;
+    background: black;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.directorBox {
+  height: 350px;
+  width: 350px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.directorBox::after {
+  content: "";
+  display: block;
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  background-color: #8a4a42;
+  left: -35px;
+  top: -35px;
+  z-index: -1;
+}
+.second.directorBox::after {
+  left: 35px;
+}
+@media (max-width: 500px) {
+  section {
+    overflow: hidden;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .dashed-border {
+    height: 300px;
+  }
+}
+
+/* ////////////////////////////////////// service ////////////////////////////////  */
+
+.service .dotted-line {
+  border-top: 2px dashed gray;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  z-index: -1;
+}
+
+.service > div {
+  position: relative;
+}
+.upDownImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.upDownImg img {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+.upDownImg img:nth-of-type(even) {
+  transform: translateY(50px);
+}
+@media (max-width: 500px) {
+  .upDownImg img {
+    height: 140px;
+    width: 140px;
+    margin: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .upDownImg img {
+    height: 120px;
+    width: 120px;
+    margin: 10px;
+  }
+}
+
+
+/* ///////////////////////////////////////// client //////////////////////////////// */
+
+.clientBorder{
+  border-radius: 50px 0 50px 0 ;
+  border: 2px dashed gray;
+  padding: 30px;
+}
+
+
+/* ///////////////////////////////////// contact ////////////////////////////// */
+.contactForm{
+padding: 0 10%;
+box-shadow: 0 0 10px -5px black;
+border-radius: 10px;
+}
+.contactForm input{
+  background-color: #F8F8F8  ;
+  border:none;
+  width: 100%;
+  padding: 10px ;
+  box-shadow: 0 0 1px  black;
+
+}
+.contactForm textarea{
+  background-color: #F8F8F8;
+  border: none;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0 0 1px  black;
+}
+
+
+
+
+/* ////////////////////////////////////////  quote ///////////////////////////////////////////////// */
+.quoteForm{
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  box-shadow: 0 0 4px -3px gray;
+}
+.quoteForm input{  
+  border:none;
+  width: 100%;
+  padding: 10px ;
+  box-shadow: 0 0 1px  black;
+  border-radius: 2px;
+}
+.quoteForm label{
+margin-left: 10px;
+color: gray;
+}
+.quoteForm input[type='checkbox']{
+  border: none;
+  box-shadow: none;
+  transform: scale(2);
+}
+.quoteForm .position-absolute{
+  top: -40px;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%);
+}
+.wings label{
+margin: 0;
+}
+
+@media (max-width:500px){
+
+  .quoteForm input[type='checkbox']{
+    transform: scale(1);
+  }
+}
+  

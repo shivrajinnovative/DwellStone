@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header class="bg-secondary py-3">
+    <div class="container">
+    <div class="d-flex mb-3 justify-content-between align-items-center">
+            <div class="d-none d-md-block  col-md-3 col-lg-4">
+                <img src="./asset/logo.png" class="logo">
+            </div>
+            <div class="d-flex justify-content-center col-12 col-md-9 col-lg-8 ">
+                <div class=" col-md-8 row">
+                    <div class="px-5 px-sm-0  col-lg-5 d-flex align-items-center border-md-end">
+                        <i class="fa-solid fa-phone-volume fs-4 m-2 m-sm-3 text-primary"></i>
+                        <div>
+                            <p>Call Anytime</p>
+                            <p class="text-primary">+91  99604 33013</p>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-flex px-0 col-lg-7  align-items-center ">
+                        <i class="fa-solid fa-envelope fs-4 m-3 text-primary"></i>
+                        <div>
+                            <p>Send text</p>
+                            <p class="text-primary">dwellstoneengineers@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 d-none mx-auto d-md-flex align-items-center justify-content-between">
+                    <i class="fa-brands fa-facebook text-primary fs-2"></i>
+                    <i class="fa-brands fa-twitter bg-primary text-white rounded-pill p-2"></i>
+                    <i class="fa-brands fa-linkedin-in bg-primary text-white rounded-pill p-2"></i>
+                    <i class="fa-brands fa-instagram bg-primary text-white rounded-pill p-2"></i>
+                </div>
+            </div>
+          
+    </div>
+    </div>
+    <nav class="navbar container navbar-expand-md bg-white">
+        <div class="container py-2 px-sm-5">
+          <img src="./asset/logo.png" class="navbar-brand logo d-md-none">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./clients.html">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact Us</a>
+              </li>
+          
+            </ul>
+            <a class="btn bg-primary text-white rounded-5 px-3" href="#">Get A Quote</a>
+        
+          </div>
+        </div>
+      </nav>
+</header>
+
+<header class="hero">
+</header>
+
+
+<section class="py-5 container">
+
+
+  <form class="quoteForm px-3 my-3 px-md-5 py-5 position-relative">
+    <div class="text-center py-3 position-absolute">
+        <h3 class="heading">Building Information for PMC (Project Management Consultants)</h3>
+      </div>
+    <div class="row mt-5">
+        <div class="col-md-6 form-floating mb-3">
+            <input type="text" class="form-control"   required placeholder="Building Name">
+            <label for="floatingInput">Building Name<span class="text-danger">*</span></label>
+        </div>
+        <div class="col-md-6 form-floating mb-3">
+            <input type="text" class="form-control"   required placeholder="Address">
+            <label for="floatingInput">Address<span class="text-danger">*</span></label>
+        </div>
+        <div class="col-md-6 form-floating mb-3">
+            <input type="text" class="form-control"  required placeholder="Number of Floors">
+            <label for="floatingInput">Number of Floors<span class="text-danger">*</span></label>
+        </div>
+        <div class="col-md-6 form-floating mb-3">
+            <input type="text" class="form-control"  required placeholder="Number of Wings">
+            <label for="floatingInput">Number of Wings <span class="text-danger">*</span></label>
+        </div>
+        <div class="col-md-6 mb-3 d-flex">
+            <span class="col-5">Structural Audit Done </span>
+            <div class="row col-5 text-center">
+                <div class="col-6">
+                    <input type="checkbox" name="" id="auditYes">
+                    <label for="auditYes">yes</label>
+                </div>
+                <div class="col-6">
+                    <input type="checkbox" name="" id="auditNo">
+                    <label for="auditNo">yes</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3 d-flex">
+            <span class="col-5">Repair Estimate Available</span>
+            <div class="row col-5 text-center">
+                <div class="col-6">
+                    <input type="checkbox" name="" id="repairYes">
+                    <label for="repairYes">yes</label>
+                </div>
+                <div class="col-6">
+                    <input type="checkbox" name="" id="repairNo">
+                    <label for="repairNo">yes</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3  d-flex">
+            <span class="col-5">Do you want to do Tendering</span>
+            <div class="row col-5 text-center">
+                <div class="col-6">
+                    <input type="checkbox" name="" id="tendingYes">
+                    <label for="tendingYes">yes</label>
+                </div>
+                <div class="col-6">
+                    <input type="checkbox" name="" id="tendingNo">
+                    <label for="tendingNo">yes</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 form-floating mb-3">
+            <input type="text" class="form-control" required placeholder="Enter Your Name">
+            <label for="floatingInput">Enter Your Name<span class="text-danger">*</span></label>
+        </div>
+        
+        <div class="col-md-6 form-floating mb-3">
+            <input type="text" class="form-control" required placeholder="Enter Contact Number">
+            <label for="floatingInput">Enter Contact Number <span class="text-danger">*</span></label>
+        </div>
+        
+        <div class="col-md-6 form-floating mb-3">
+            <input type="text" class="form-control" placeholder="Remark">
+            <label for="floatingInput">Remark </label>
+        </div>
+        <div class="mb-3">
+            <button class="bg-primary text-white py-2 px-5 border-0">Submit</button>
+        </div>
+    </div>
+  </form>
+</section>
+
+
+
+<section class="py-5 container">
+
+
+    <form class="quoteForm px-3 my-3 px-md-5 py-5 position-relative">
+      <div class="text-center py-3 position-absolute">
+          <h3 class="heading">Building Information for Structural Audit</h3>
+        </div>
+      <div class="row mt-5">
+          <div class="col-md-6 form-floating mb-3">
+              <input type="text" class="form-control"   required placeholder="Building Name">
+              <label for="floatingInput">Building Name<span class="text-danger">*</span></label>
+          </div>
+          <div class="col-md-6 form-floating mb-3">
+              <input type="text" class="form-control"   required placeholder="Address">
+              <label for="floatingInput">Address<span class="text-danger">*</span></label>
+          </div>
+          
+          <div class="col-md-6 form-floating mb-3">
+            <input type="text" class="form-control"   placeholder="Number of Buildings">
+            <label for="floatingInput">Number of Buildings</label>
+        </div>
+          <div class="col-md-6 form-floating mb-3">
+              <input type="text" class="form-control"  required placeholder="Number of Floors">
+              <label for="floatingInput">Number of Floors<span class="text-danger">*</span></label>
+          </div>
+          <div class="col-lg-6 mb-3 d-flex align-items-center">
+            <span class="col-4">Number of Wings<span class="text-danger">*</span></span>
+            <div class="d-flex col-md-6 text-center wings justify-content-around">
+               <div class="text-center">
+                <label for="">1</label>
+                <input type="checkbox" name="" id="">
+               </div>
+               <div class="text-center">
+                <label for="">2</label>
+                <input type="checkbox" name="" id="">
+               </div>
+               <div class="text-center">
+                <label for="">3</label>
+                <input type="checkbox" name="" id="">
+               </div>
+               <div class="text-center">
+                <label for="">4</label>
+                <input type="checkbox" name="" id="">
+               </div>
+               <div class="text-center">
+                <label for="">5</label>
+                <input type="checkbox" name="" id="">
+               </div>
+               <div class="text-center">
+                <label for="">6</label>
+                <input type="checkbox" name="" id="">
+               </div>
+               <div class="text-center">
+                <label for="">7</label>
+                <input type="checkbox" name="" id="">
+               </div>
+               <div class="text-center">
+                <label for="">8</label>
+                <input type="checkbox" name="" id="">
+               </div>
+            </div>
+        </div>
+          <div class="col-lg-6 mb-3 d-flex align-items-center">
+            <span class="col-4">Types of Flats<span class="text-danger">*</span></span>
+            <div class="d-flex col-md-5 text-center wings justify-content-around">
+               <div class="text-center">
+                <label for="">1 RK</label>
+                <input type="checkbox" name="" id="">
+               </div>
+               <div class="text-center">
+                <label for="">1 BHK</label>
+                <input type="checkbox" name="" id="">
+               </div>
+               <div class="text-center">
+                <label for="">2 BHK</label>
+                <input type="checkbox" name="" id="">
+               </div>
+               <div class="text-center">
+                <label for="">3 BHK</label>
+                <input type="checkbox" name="" id="">
+               </div>
+             
+            </div>
+        </div>
+
+
+          <div class="col-md-6 form-floating mb-3">
+              <input type="text" class="form-control"  required placeholder="Total Number of Flats  (1RK, 1BHK, 2BHK,3BHK)">
+              <label for="floatingInput">Total Number of Flats  (1RK, 1BHK, 2BHK,3BHK) <span class="text-danger">*</span></label>
+          </div>
+          <div class="col-md-6 form-floating mb-3">
+              <input type="text" class="form-control"  required placeholder="Total Number of Shops">
+              <label for="floatingInput">Total Number of Shops</label>
+          </div>
+          <div class="col-md-6 form-floating mb-3">
+              <input type="text" class="form-control"  required placeholder="NApprox. Age of Building in Years">
+              <label for="floatingInput">Approx. Age of Building in Years <span class="text-danger">*</span></label>
+          </div>
+          <div class="col-md-6 form-floating mb-3">
+              <input type="text" class="form-control"  required placeholder="Whether Drawings are Available?">
+              <label for="floatingInput">Whether Drawings are Available? <span class="text-danger">*</span></label>
+          </div>
+          <div class="col-md-6 mb-3 d-flex">
+              <span class="col-5">Occupation Certificate (OC) Availability <span class="text-danger">*</span> </span>
+              <div class="row col-5 text-center">
+                  <div class="col-6">
+                      <input type="checkbox" name="" id="auditYes">
+                      <label for="auditYes">yes</label>
+                  </div>
+                  <div class="col-6">
+                      <input type="checkbox" name="" id="auditNo">
+                      <label for="auditNo">No</label>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 mb-3 d-flex">
+              <span class="col-7">Whether you received Any Notice from Municipal Corporation for Structural Audit <span class="text-danger">*</span> </span>
+              <div class="d-flex col-5 text-center">
+                  <div class="col-3">
+                      <input type="checkbox" name="" id="repairYes">
+                      <label for="repairYes">yes</label>
+                  </div>
+                  <div class="col-3">
+                      <input type="checkbox" name="" id="repairNo">
+                      <label for="repairNo">No</label>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-md-6 form-floating mb-3">
+              <input type="text" class="form-control" required placeholder="Enter Your Name">
+              <label for="floatingInput">Enter Your Name<span class="text-danger">*</span></label>
+          </div>
+          
+          <div class="col-md-6 form-floating mb-3">
+              <input type="text" class="form-control"  placeholder="Enter Contact Number">
+              <label for="floatingInput">Enter Contact Number </label>
+          </div>
+          
+          <div class=" form-floating mb-3">
+      
+              <input type="text" class="form-control" placeholder="Remark">
+              <label for="floatingInput">Remark </label>
+          </div>
+          <div class="mb-3">
+              <button class="bg-primary text-white py-2 px-5 border-0">Submit</button>
+          </div>
+      </div>
+    </form>
+  </section>
+  
+
+
+
+
+
+
+<footer class="bg-dark text-white">
+  <div class="container py-4">
+    <div class="row align-items-center">
+      <div class="col-lg-5 d-none d-lg-flex  flex-wrap justify-content-center align-items-center">
+        <div class="d-flex align-items-center mx-auto">
+          <i class="fa-brands fa-facebook text-white fs-2 mx-1"></i>
+          <i
+            class="fa-brands fa-twitter bg-white text-dark rounded-pill p-2 mx-1"
+          ></i>
+          <i
+            class="fa-brands fa-linkedin-in bg-white text-dark rounded-pill p-2 mx-1"
+          ></i>
+          <i
+            class="fa-brands fa-instagram bg-white text-dark rounded-pill p-2 mx-1"
+          ></i>
+        </div>
+        <p class="text-center">Copyright © 2024 Leams All Rights Reserved</p>
+      </div>
+      <div class="col-lg-2">
+        <img src="./asset/logowhite.png" class="mx-auto d-block my-md-2" alt="" width="150px"/>
+      </div>
+      <div class="col-lg-5  my-2 mt-4 text-center">
+        <p class="d-flex flex-wrap justify-content-center">
+        <span>  <i class="fa-solid fa-phone-volume fs-6 m-1"></i>
+          +91 99604 33013</span>
+        <span class="my-2 my-md-0">
+          <i class="fa-solid fa-envelope fs-6 m-1"></i>
+          dwellstoneengineers@gmail.com
+        </span>
+        </p>
+      </div>
+      <div class="col-lg-5 d-flex d-lg-none  my-4 flex-wrap justify-content-center align-items-center">
+        
+        <p class="text-center">Copyright © 2024 Leams All Rights Reserved</p>
+      </div
+    </div>
+    <hr>
+    <p class="text-center"> <img src="./asset/innovative.png" alt="">  Design & Developed By Innovative Web Solutions</p>
+  </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
