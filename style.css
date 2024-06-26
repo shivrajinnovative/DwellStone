@@ -4,7 +4,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-} 
+}
 .bg-primary {
   background-color: #8a4a42 !important;
 }
@@ -17,11 +17,11 @@ body {
 .text-primary {
   color: #8a4a42 !important;
 }
-.active{
+.active {
   color: #8a4a42 !important;
   font-weight: 700 !important;
 }
-.fw-400{
+.fw-400 {
   font-weight: 400;
 }
 
@@ -59,27 +59,25 @@ header {
   top: 120px;
   box-shadow: 0 5px 10px -5px black;
   left: 6%;
-      --bs-navbar-toggler-border-color:none
+  --bs-navbar-toggler-border-color: none;
 }
-@media (max-width:768px){
-  .navbar{
+@media (max-width: 768px) {
+  .navbar {
     left: 4%;
   }
 }
-
 @media (max-width: 500px) {
   .heading {
     padding: 10px 15px;
 
     font-size: 18px;
   }
-  .navbar{
+  .navbar {
     left: 0 !important;
-  top: 90px;
+    top: 90px;
   }
 }
-/* ////////////////////////////////// index //////////////////////////////  */
-
+/* ////////////////////////////////// INDEX PAGE //////////////////////////////  */
 .hero h1 {
   font-size: 55px;
   font-family: "DM Sans", sans-serif;
@@ -144,18 +142,17 @@ header {
   right: 10%;
   bottom: -5%;
 }
-  .owl-carousel img{
- filter: grayscale(100);
-height: 50px;
-width: 150px !important;
-margin: auto;
+.owl-carousel img {
+  filter: grayscale(100);
+  height: 50px;
+  width: 150px !important;
+  margin: auto;
 }
 @media (max-width: 500px) {
   .serviceCard {
     height: 150px !important;
   }
 }
-
 @media (max-width: 768px) {
   header .logo {
     height: 70px;
@@ -182,57 +179,51 @@ margin: auto;
     border-radius: 0 0 30px 0;
   }
 }
-
-/* ///////////////////////////////// ABOUT /////////////////////////////////////////// */
-.carousel-item img{
-height: 500px;
-object-fit: cover;
+/* ///////////////////////////////// ABOUT PAGE /////////////////////////////////////////// */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
 }
 .carousel-caption {
- top: 6rem;
-text-align: start;
-width: 30%;
+  top: 6rem;
+  text-align: start;
+  width: 30%;
 }
-
-
-@media (max-width:500px){
-  .carousel-caption {
-    top: 9rem;
-   text-align: start;
-   width: 90%;
-   }
-}
-
 .dashed-border {
   border: 2px dashed #ccc;
   padding: 40px;
   position: relative;
   margin: 20px;
   height: 400px;
-  img {
-    height: 100%;
-    width: 100%;
-  }
-  .number {
-    position: absolute;
-    top: -10px;
-    left: 25px;
-    color: white;
-    background: black;
-    height: 20px;
-    width: 20px;
-    text-align: center;
-    font-size: 14px;
+}
+.dashed-border img {
+  height: 100%;
+  width: 100%;
+}
+.dashed-border .number {
+  position: absolute;
+  top: -10px;
+  left: 25px;
+  color: white;
+  background: black;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+@media (max-width: 500px) {
+  .carousel-caption {
+    top: 9rem;
+    text-align: start;
+    width: 90%;
   }
 }
-
 .directorBox {
   height: 350px;
   width: 350px;
   margin: 20px auto;
   position: relative;
 }
-
 .directorBox::after {
   content: "";
   display: block;
@@ -257,9 +248,7 @@ width: 30%;
     height: 300px;
   }
 }
-
-/* ////////////////////////////////////// service ////////////////////////////////  */
-
+/* ////////////////////////////////////// SERVICE ////////////////////////////////  */
 .service .dotted-line {
   border-top: 2px dashed gray;
   position: absolute;
@@ -267,7 +256,6 @@ width: 30%;
   top: 50%;
   z-index: -1;
 }
-
 .service > div {
   position: relative;
 }
@@ -300,104 +288,86 @@ width: 30%;
     margin: 10px;
   }
 }
-
-
-/* ///////////////////////////////////////// client //////////////////////////////// */
-
-.clientBorder{
-  border-radius: 50px 0 50px 0 ;
+/* ///////////////////////////////////////// CLIENT PAGE //////////////////////////////// */
+.clientBorder {
+  border-radius: 50px 0 50px 0;
   border: 2px dashed gray;
   padding: 30px;
 }
-.border-md-end{
+.border-md-end {
   border-right: 1px solid rgb(197, 197, 197);
 }
-.border-sm-end{
+.border-sm-end {
   border-right: 1px solid rgb(197, 197, 197);
 }
-
-@media (max-width:768px){
-  .border-md-end{
-    border-right:none;
+@media (max-width: 768px) {
+  .border-md-end {
+    border-right: none;
   }
-  
 }
-@media (max-width:500px){
-  .border-sm-end{
-    border-right:none;
+@media (max-width: 500px) {
+  .border-sm-end {
+    border-right: none;
   }
-  
 }
-
-/* ///////////////////////////////////// contact ////////////////////////////// */
-
-.contactForm{
-padding: 0 10%;
-box-shadow: 0 0 10px -5px black;
-border-radius: 10px;
+/* ///////////////////////////////////// CONTACT PAGE ////////////////////////////// */
+.contactForm {
+  padding: 0 10%;
+  box-shadow: 0 0 10px -5px black;
+  border-radius: 10px;
 }
-
-.contactForm input{
-  background-color: #F8F8F8  ;
-  border:none;
+.contactForm input {
+  background-color: #f8f8f8;
+  border: none;
   width: 100%;
-  padding: 10px ;
-  box-shadow: 0 0 1px  black;
-
+  padding: 10px;
+  box-shadow: 0 0 1px black;
 }
-.contactForm textarea{
-  background-color: #F8F8F8;
+.contactForm textarea {
+  background-color: #f8f8f8;
   border: none;
   width: 100%;
   height: 100px;
-  box-shadow: 0 0 1px  black;
+  box-shadow: 0 0 1px black;
 }
-
-@media (max-width:500px){
-  .contactPage h2{
+@media (max-width: 500px) {
+  .contactPage h2 {
     font-size: 20px;
   }
 }
-
-
-
-
-/* ////////////////////////////////////////  quote ///////////////////////////////////////////////// */
-.quoteForm{
-  background-color: #F5F5F5;
+/* ////////////////////////////////////////  QUOTE  PAGE ///////////////////////////////////////////////// */
+.quoteForm {
+  background-color: #f5f5f5;
   border-radius: 5px;
   box-shadow: 0 0 4px -3px gray;
 }
-.quoteForm input{  
-  border:none;
+.quoteForm input {
+  border: none;
   width: 100%;
-  padding: 10px ;
-  box-shadow: 0 0 1px  black;
+  padding: 10px;
+  box-shadow: 0 0 1px black;
   border-radius: 2px;
 }
-.quoteForm label{
-margin-left: 10px;
-color: gray;
+.quoteForm label {
+  margin-left: 10px;
+  color: gray;
 }
-.quoteForm input[type='checkbox']{
+.quoteForm input[type="checkbox"] {
   border: none;
   box-shadow: none;
   transform: scale(2);
 }
-.quoteForm .position-absolute{
+.quoteForm .position-absolute {
   top: -40px;
   left: 50%;
   width: 80%;
   transform: translateX(-50%);
 }
-.wings label{
-margin: 0;
+.wings label {
+  margin: 0;
 }
-
-@media (max-width:500px){
-
-  .quoteForm input[type='checkbox']{
+@media (max-width: 500px) {
+  .quoteForm input[type="checkbox"] {
     transform: scale(1);
   }
 }
-  
