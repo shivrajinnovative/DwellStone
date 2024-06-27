@@ -11,7 +11,7 @@
 <body>
 
 
-<header class="bg-secondary py-3">
+<header class="bg-secondary py-4">
     <div class="container">
     <div class="d-flex mb-3 justify-content-between align-items-center">
             <div class="d-none d-md-block  col-md-3 col-lg-4">
@@ -29,12 +29,12 @@
                     <div class="d-none d-md-flex px-0 col-lg-7  align-items-center ">
                         <i class="fa-solid fa-envelope fs-4 m-3 text-primary"></i>
                         <div>
-                            <p>Send text</p>
-                            <p class="text-primary">dwellstoneengineers@gmail.com</p>
+                          <p>Send Email</p>
+                          <p class="text-primary">dwellstoneengineers@gmail.com</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-lg-3 d-none mx-auto d-md-flex align-items-center justify-content-between">
+                <div class="col-4 col-lg-2 d-none mx-auto d-md-flex align-items-center justify-content-between">
                     <i class="fa-brands fa-facebook text-primary fs-2"></i>
                     <i class="fa-brands fa-twitter bg-primary text-white rounded-pill p-2"></i>
                     <i class="fa-brands fa-linkedin-in bg-primary text-white rounded-pill p-2"></i>
@@ -89,77 +89,83 @@
         <h3 class="heading">Building Information for PMC (Project Management Consultants)</h3>
       </div>
     <div class="row mt-5">
-        <div class="col-md-6 form-floating mb-3">
+        <div class="col-md-6 form-floating mb-4">
             <input type="text" class="form-control"   required placeholder="Building Name">
             <label for="floatingInput">Building Name<span class="text-danger">*</span></label>
         </div>
-        <div class="col-md-6 form-floating mb-3">
+        <div class="col-md-6 form-floating mb-4">
             <input type="text" class="form-control"   required placeholder="Address">
             <label for="floatingInput">Address<span class="text-danger">*</span></label>
         </div>
-        <div class="col-md-6 form-floating mb-3">
+        <div class="col-md-6 form-floating mb-4">
             <input type="text" class="form-control"  required placeholder="Number of Floors">
             <label for="floatingInput">Number of Floors<span class="text-danger">*</span></label>
         </div>
-        <div class="col-md-6 form-floating mb-3">
+        <div class="col-md-6 form-floating mb-4">
             <input type="text" class="form-control"  required placeholder="Number of Wings">
             <label for="floatingInput">Number of Wings <span class="text-danger">*</span></label>
         </div>
-        <div class="col-md-6 mb-3 d-flex">
+        <div class="col-md-6 mb-4 d-flex">
             <span class="col-5">Structural Audit Done </span>
-            <div class="row col-5 text-center">
-                <div class="col-6">
-                    <input type="checkbox" name="" id="auditYes">
-                    <label for="auditYes">yes</label>
-                </div>
-                <div class="col-6">
-                    <input type="checkbox" name="" id="auditNo">
-                    <label for="auditNo">yes</label>
-                </div>
+            <div class="d-flex col-5 ">
+              <label class="tickmark">
+                <input type="radio"  name="radio">
+                <span class="checkmark"></span>
+                Yes
+              </label>
+              <label class="tickmark">No
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+              
             </div>
         </div>
-        <div class="col-md-6 mb-3 d-flex">
-            <span class="col-5">Repair Estimate Available</span>
-            <div class="row col-5 text-center">
-                <div class="col-6">
-                    <input type="checkbox" name="" id="repairYes">
-                    <label for="repairYes">yes</label>
-                </div>
-                <div class="col-6">
-                    <input type="checkbox" name="" id="repairNo">
-                    <label for="repairNo">yes</label>
-                </div>
+        <div class="col-md-6 mb-4 d-flex">
+            <span class="col-6">Repair Estimate Available</span>
+            <div class="d-flex col-5 ">
+              <label class="tickmark">
+                <input type="radio"  name="radio2">
+                <span class="checkmark"></span>
+                Yes
+              </label>
+              <label class="tickmark">No
+                <input type="radio" name="radio2">
+                <span class="checkmark"></span>
+              </label>
+              
             </div>
         </div>
-        <div class="col-md-6 mb-3  d-flex">
-            <span class="col-5">Do you want to do Tendering</span>
-            <div class="row col-5 text-center">
-                <div class="col-6">
-                    <input type="checkbox" name="" id="tendingYes">
-                    <label for="tendingYes">yes</label>
-                </div>
-                <div class="col-6">
-                    <input type="checkbox" name="" id="tendingNo">
-                    <label for="tendingNo">yes</label>
-                </div>
+        <div class="col-md-6 mb-4  d-flex">
+            <span class="col-6">Do you want to do Tendering</span>
+            <div class="d-flex col-5 ">
+              <label class="tickmark">
+                <input type="radio"  name="radio3">
+                <span class="checkmark"></span>
+                Yes
+              </label>
+              <label class="tickmark">No
+                <input type="radio" name="radio3">
+                <span class="checkmark"></span>
+              </label>
+              
             </div>
         </div>
         
-        <div class="col-md-6 form-floating mb-3">
+        <div class="col-md-6 form-floating mb-4">
             <input type="text" class="form-control" required placeholder="Enter Your Name">
             <label for="floatingInput">Enter Your Name<span class="text-danger">*</span></label>
         </div>
         
-        <div class="col-md-6 form-floating mb-3">
+        <div class="col-md-6 form-floating mb-4">
             <input type="text" class="form-control" required placeholder="Enter Contact Number">
             <label for="floatingInput">Enter Contact Number <span class="text-danger">*</span></label>
         </div>
         
-        <div class="col-md-6 form-floating mb-3">
+        <div class="col-md-6 form-floating mb-4">
             <input type="text" class="form-control" placeholder="Remark">
             <label for="floatingInput">Remark </label>
         </div>
-        <div class="mb-3">
+        <div class="mb-4">
             <button class="bg-primary text-white py-2 px-5 border-0">Submit</button>
         </div>
     </div>
@@ -176,143 +182,160 @@
           <h3 class="heading">Building Information for Structural Audit</h3>
         </div>
       <div class="row mt-5">
-          <div class="col-md-6 form-floating mb-3">
+          <div class="col-md-6 form-floating mb-4">
               <input type="text" class="form-control"   required placeholder="Building Name">
               <label for="floatingInput">Building Name<span class="text-danger">*</span></label>
           </div>
-          <div class="col-md-6 form-floating mb-3">
+          <div class="col-md-6 form-floating mb-4">
               <input type="text" class="form-control"   required placeholder="Address">
               <label for="floatingInput">Address<span class="text-danger">*</span></label>
           </div>
           
-          <div class="col-md-6 form-floating mb-3">
+          <div class="col-md-6 form-floating mb-4 ">
             <input type="text" class="form-control"   placeholder="Number of Buildings">
             <label for="floatingInput">Number of Buildings</label>
         </div>
-          <div class="col-md-6 form-floating mb-3">
+          <div class="col-md-6 form-floating mb-4">
               <input type="text" class="form-control"  required placeholder="Number of Floors">
               <label for="floatingInput">Number of Floors<span class="text-danger">*</span></label>
           </div>
-          <div class="col-lg-6 mb-3 d-flex align-items-center">
-            <span class="col-4">Number of Wings<span class="text-danger">*</span></span>
-            <div class="d-flex col-md-6 text-center wings justify-content-around">
-               <div class="text-center">
-                <label for="">1</label>
-                <input type="checkbox" name="" id="">
-               </div>
-               <div class="text-center">
-                <label for="">2</label>
-                <input type="checkbox" name="" id="">
-               </div>
-               <div class="text-center">
-                <label for="">3</label>
-                <input type="checkbox" name="" id="">
-               </div>
-               <div class="text-center">
-                <label for="">4</label>
-                <input type="checkbox" name="" id="">
-               </div>
-               <div class="text-center">
-                <label for="">5</label>
-                <input type="checkbox" name="" id="">
-               </div>
-               <div class="text-center">
-                <label for="">6</label>
-                <input type="checkbox" name="" id="">
-               </div>
-               <div class="text-center">
-                <label for="">7</label>
-                <input type="checkbox" name="" id="">
-               </div>
-               <div class="text-center">
-                <label for="">8</label>
-                <input type="checkbox" name="" id="">
-               </div>
+          <div class="col-lg-6 mb-4 d-flex flex-wrap align-items-center">
+            <span class="col-12 col-sm-4">Number of Wings<span class="text-danger">*</span></span>
+            <div class="d-flex col-8 col-sm-6 multiple">
+              <label class="tickmark ">
+                <input type="radio"  name="radio4">
+                <span class="checkmark"></span>
+                1
+              </label>
+              <label class="tickmark">
+                <input type="radio"  name="radio4">
+                <span class="checkmark"></span>
+                2
+              </label>
+              <label class="tickmark">
+                <input type="radio"  name="radio4">
+                <span class="checkmark"></span>
+                3
+              </label>
+              <label class="tickmark">
+                <input type="radio"  name="radio4">
+                <span class="checkmark"></span>
+                4
+              </label>
+              <label class="tickmark">
+                <input type="radio"  name="radio4">
+                <span class="checkmark"></span>
+                5
+              </label>
+              <label class="tickmark">
+                <input type="radio"  name="radio4">
+                <span class="checkmark"></span>
+                6
+              </label>
+              <label class="tickmark">
+                <input type="radio"  name="radio4">
+                <span class="checkmark"></span>
+                7
+              </label>
+              <label class="tickmark">
+                <input type="radio"  name="radio4">
+                <span class="checkmark"></span>
+                8
+              </label>
+              
             </div>
         </div>
-          <div class="col-lg-6 mb-3 d-flex align-items-center">
-            <span class="col-4">Types of Flats<span class="text-danger">*</span></span>
-            <div class="d-flex col-md-5 text-center wings justify-content-around">
-               <div class="text-center">
-                <label for="">1 RK</label>
-                <input type="checkbox" name="" id="">
-               </div>
-               <div class="text-center">
-                <label for="">1 BHK</label>
-                <input type="checkbox" name="" id="">
-               </div>
-               <div class="text-center">
-                <label for="">2 BHK</label>
-                <input type="checkbox" name="" id="">
-               </div>
-               <div class="text-center">
-                <label for="">3 BHK</label>
-                <input type="checkbox" name="" id="">
-               </div>
-             
+          <div class="col-lg-6 mb-4 d-flex flex-wrap align-items-center">
+            <span class="col-12 col-sm-4">Types of Flats<span class="text-danger">*</span></span>
+            <div class="d-flex col-12 col-sm-8 multiple multiple2">
+              <label class="tickmark ">
+                <input type="radio"  name="radio5">
+                <span class="checkmark"></span>
+                1 RK 
+              </label>
+              <label class="tickmark">
+                <input type="radio"  name="radio5">
+                <span class="checkmark"></span>
+                1 BHK 
+              </label>
+              <label class="tickmark">
+                <input type="radio"  name="radio5">
+                <span class="checkmark"></span>
+                2 BHK
+              </label>
+              <label class="tickmark">
+                <input type="radio"  name="radio5">
+                <span class="checkmark"></span>
+                3 BHK
+              </label>
+              
             </div>
         </div>
 
 
-          <div class="col-md-6 form-floating mb-3">
+          <div class="col-md-6 form-floating mb-4">
               <input type="text" class="form-control"  required placeholder="Total Number of Flats  (1RK, 1BHK, 2BHK,3BHK)">
               <label for="floatingInput">Total Number of Flats  (1RK, 1BHK, 2BHK,3BHK) <span class="text-danger">*</span></label>
           </div>
-          <div class="col-md-6 form-floating mb-3">
+          <div class="col-md-6 form-floating mb-4">
               <input type="text" class="form-control"  required placeholder="Total Number of Shops">
               <label for="floatingInput">Total Number of Shops</label>
           </div>
-          <div class="col-md-6 form-floating mb-3">
+          <div class="col-md-6 form-floating mb-4">
               <input type="text" class="form-control"  required placeholder="NApprox. Age of Building in Years">
               <label for="floatingInput">Approx. Age of Building in Years <span class="text-danger">*</span></label>
           </div>
-          <div class="col-md-6 form-floating mb-3">
+          <div class="col-md-6 form-floating mb-4">
               <input type="text" class="form-control"  required placeholder="Whether Drawings are Available?">
               <label for="floatingInput">Whether Drawings are Available? <span class="text-danger">*</span></label>
           </div>
-          <div class="col-md-6 mb-3 d-flex">
-              <span class="col-5">Occupation Certificate (OC) Availability <span class="text-danger">*</span> </span>
-              <div class="row col-5 text-center">
-                  <div class="col-6">
-                      <input type="checkbox" name="" id="auditYes">
-                      <label for="auditYes">yes</label>
-                  </div>
-                  <div class="col-6">
-                      <input type="checkbox" name="" id="auditNo">
-                      <label for="auditNo">No</label>
-                  </div>
+          <div class="col-md-6 mb-4 d-flex">
+              <span class="col-6">Occupation Certificate (OC) Availability <span class="text-danger">*</span> </span>
+              <div class="d-flex col-5 ">
+                <label class="tickmark">
+                  <input type="radio"  name="radio7">
+                  <span class="checkmark"></span>
+                  Yes
+                </label>
+                <label class="tickmark">No
+                  <input type="radio" name="radio7">
+                  <span class="checkmark"></span>
+                </label>
+                
               </div>
           </div>
-          <div class="col-md-6 mb-3 d-flex">
+          <div class="col-md-6 mb-4 d-flex">
               <span class="col-7">Whether you received Any Notice from Municipal Corporation for Structural Audit <span class="text-danger">*</span> </span>
-              <div class="d-flex col-5 text-center">
-                  <div class="col-3">
-                      <input type="checkbox" name="" id="repairYes">
-                      <label for="repairYes">yes</label>
-                  </div>
-                  <div class="col-3">
-                      <input type="checkbox" name="" id="repairNo">
-                      <label for="repairNo">No</label>
-                  </div>
+              <div class="d-flex col-5 ">
+                <label class="tickmark">
+                  <input type="radio"  name="radio8">
+                  <span class="checkmark"></span>
+                  Yes
+                </label>
+                <label class="tickmark">No
+                  <input type="radio" name="radio8">
+                  <span class="checkmark"></span>
+                </label>
+                
               </div>
           </div>
           
-          <div class="col-md-6 form-floating mb-3">
+          <div class="col-md-6 form-floating mb-4">
               <input type="text" class="form-control" required placeholder="Enter Your Name">
               <label for="floatingInput">Enter Your Name<span class="text-danger">*</span></label>
           </div>
           
-          <div class="col-md-6 form-floating mb-3">
+          <div class="col-md-6 form-floating mb-4">
               <input type="text" class="form-control"  placeholder="Enter Contact Number">
               <label for="floatingInput">Enter Contact Number </label>
           </div>
           
-          <div class=" form-floating mb-3">
+          <div class=" form-floating mb-4">
       
               <input type="text" class="form-control" placeholder="Remark">
               <label for="floatingInput">Remark </label>
           </div>
-          <div class="mb-3">
+          <div class="mb-4">
               <button class="bg-primary text-white py-2 px-5 border-0">Submit</button>
           </div>
       </div>
@@ -331,9 +354,7 @@
       <div class="col-lg-5 d-none d-lg-flex  flex-wrap justify-content-center align-items-center">
         <div class="d-flex align-items-center mx-auto">
           <i class="fa-brands fa-facebook text-white fs-2 mx-1"></i>
-          <i
-            class="fa-brands fa-twitter bg-white text-dark rounded-pill p-2 mx-1"
-          ></i>
+          <i class="fa-brands fa-twitter bg-white text-dark rounded-pill p-2 mx-1" ></i>
           <i
             class="fa-brands fa-linkedin-in bg-white text-dark rounded-pill p-2 mx-1"
           ></i>
@@ -359,10 +380,10 @@
       <div class="col-lg-5 d-flex d-lg-none  my-4 flex-wrap justify-content-center align-items-center">
         
         <p class="text-center">Copyright © 2024 Leams All Rights Reserved</p>
-      </div
+    
     </div>
     <hr>
-    <p class="text-center"> <img src="./asset/innovative.png" alt="">  Design & Developed By Innovative Web Solutions</p>
+        <p class="text-center"> <img src="./asset/innovative.png" alt=""> Design & Developed By <a href="https://innovativewebs.net" class="link-underline text-white link-underline-opacity-0">Innovative Web Solutions</a>
   </div>
 </footer>
 

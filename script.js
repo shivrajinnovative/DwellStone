@@ -1,8 +1,8 @@
 window.onscroll = function() {
     var navbar = document.querySelector(".navbar");
     var scrollThreshold = window.innerWidth < 500 ? 80 : 100;
-    var leftMove = window.innerWidth < 500 ? '0' : '5%';
-    var topMove = window.innerWidth < 500 ? '90px' : '120px';
+    var leftMove = window.innerWidth < 500 ? '0' : '6%';
+    var topMove = window.innerWidth < 500 ? '90px' : '130px';
 
     if (window.pageYOffset >= scrollThreshold) {
         navbar.style.position = "fixed";
