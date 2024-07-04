@@ -5,7 +5,8 @@ window.onscroll = function() {
     if (window.pageYOffset >= scrollThreshold) {
         navbar.style.position = "fixed";
       
-  
+        navbar.style.top = 0;
+
     } else {
         navbar.style.position = "absolute";
         navbar.style.top = 0;

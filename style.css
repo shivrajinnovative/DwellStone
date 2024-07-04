@@ -101,7 +101,6 @@ header {
   }
   .navbar {
     left: 0 !important;
-    top: 90px;
   }
 }
 /* ////////////////////////////////// INDEX PAGE //////////////////////////////  */
@@ -300,29 +299,6 @@ z-index: -1;
 .aboutSection h5{
   line-height: 30px;
 }
-/* .dashed-border {
-  border: 2px dashed #ccc;
-  padding: 40px;
-  position: relative;
-  margin: 20px;
-  height: 400px;
-}
-.dashed-border img {
-  height: 100%;
-  width: 100%;
-}
-.dashed-border .number {
-  position: absolute;
-  top: -10px;
-  left: 25px;
-  color: white;
-  background: black;
-  height: 20px;
-  width: 20px;
-  text-align: center;
-  font-size: 14px;
-} */
-
 .directorBox {
   height: 350px;
   width: 350px;
@@ -343,6 +319,16 @@ z-index: -1;
 .second.directorBox::after {
   left: 35px;
 }
+.registerWith{
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 0 10px -5px rgb(95, 95, 95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
 @media (max-width: 500px) {
   section.aboutus {
     overflow: hidden;
@@ -355,6 +341,14 @@ z-index: -1;
   .directorBox::after {
     height: 250px;
     width: 250px;
+  }
+  .registerWith{
+    height:120px ;
+    width:120px ;
+  }
+  .registerWith img{
+    height: 80%;
+    width: 80%;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
