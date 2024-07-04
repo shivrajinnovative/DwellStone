@@ -65,9 +65,7 @@ header {
 .navbar {
   position: absolute;
   z-index: 999;
-  top: 130px;
   box-shadow: 0 5px 10px -5px black;
-  left: 6%;
   --bs-navbar-toggler-border-color: none;
 }
 .navbar .nav-item{
@@ -89,9 +87,7 @@ header {
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    left: 4%;
-  }
+  
   
 .navbar .nav-item{
   padding: 0 10px;
