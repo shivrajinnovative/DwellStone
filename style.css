@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 body {
   font-family: "Cabin", sans-serif;
   font-optical-sizing: auto;
@@ -11,6 +12,10 @@ body {
 }
 .bg-secondary {
   background-color: #fff8f8 !important;
+}
+.bg-gray{
+  background-color:#F8F8F8 !important;
+  z-index: -99;
 }
 .bg-dark {
   background-color: #202020 !important;
@@ -26,7 +31,9 @@ body {
 .fw-400 {
   font-weight: 400;
 }
-
+.text-justify{
+  text-align: justify;
+}
 p {
   margin: 0;
 }
@@ -57,7 +64,7 @@ header {
 }
 .navbar {
   position: absolute;
-  z-index: 99;
+  z-index: 999;
   top: 130px;
   box-shadow: 0 5px 10px -5px black;
   left: 6%;
@@ -67,6 +74,20 @@ header {
   padding: 0 20px;
   font-weight: 700;
 }
+.animateBtn{
+  animation: animateBtn 3s linear infinite;
+}
+@keyframes animateBtn{
+  0%{transform: rotate(0deg);}
+  28%{transform: rotate(0deg)scale(1);}
+  30%{transform: rotate(10deg)scale(1.2);}
+  32%{transform: rotate(0deg)scale(1.2);}
+  34%{transform: rotate(-10deg)scale(1.2);}
+  36%{transform: rotate(0deg) scale(1);}
+  90%{transform: rotate(0deg);}
+  100%{transform: rotate(0deg);}
+}
+
 @media (max-width: 768px) {
   .navbar {
     left: 4%;
@@ -112,10 +133,12 @@ header {
   font-style: normal;
 }
 .serviceCard {
+  display: block;
   height: 380px;
   overflow: hidden;
   position: relative;
   margin: 10px 0;
+  cursor: pointer;
 }
 .serviceCard img {
   position: absolute;
@@ -140,6 +163,7 @@ header {
   transform: translateX(-50%);
   border-bottom: 1px solid white;
 }
+
 .serviceCard:hover div {
   top: 0;
 }
@@ -152,7 +176,7 @@ header {
 .serviceOffering div:nth-child(4) .serviceCard {
   border-radius: 0 0 0 30px;
 }
-.serviceOffering div:nth-child(6) .serviceCard {
+.serviceOffering div:nth-child(5) .serviceCard {
   border-radius: 0 0 30px 0;
 }
 .about {
@@ -180,25 +204,25 @@ width: 100%;
 padding:0 20px;
 text-align: center;
 color: white;
-height: 50px;
-font-size: 14px ;
+height: 60px;
+font-size: 16px ;
 display: flex;
 align-items: center;
 }
+
 .custom-prev, .custom-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #d1d1d1be;
+  background: #d1d1d1ce;
   padding: 10px;
   cursor: pointer;
   z-index: 99;
   border-radius: 50%;
-  box-shadow: 0 0 10px -2px gray;
+  box-shadow: 0 0 10px -5px gray;
 }
 .custom-prev:hover, .custom-next:hover{
   background: #bbbbbb;
-
 }
 .custom-prev {
   left: -10px;
@@ -244,10 +268,7 @@ align-items: center;
     border-radius: 0 30px 0 0;
   }
   .serviceOffering div:nth-child(5) .serviceCard {
-    border-radius: 0 0 0 30px;
-  }
-  .serviceOffering div:nth-child(6) .serviceCard {
-    border-radius: 0 0 30px 0;
+    border-radius: 0 0 30px 30px;
   }
   .galleryCard{
     height: 350px;
@@ -256,8 +277,34 @@ align-items: center;
   }
 }
 /* ///////////////////////////////// ABOUT PAGE /////////////////////////////////////////// */
-
-.dashed-border {
+.aboutSection{
+  background-color: #F8F8F8;
+  font-family: "Calistoga", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+}
+.aboutSection::before,.aboutSection::after{
+  content: "";
+  display: block;
+position: absolute;
+height: 100px;
+width: 100px;
+background-color: #8a4a42;
+z-index: -1;
+}
+.aboutSection::before{
+  left: -10px;
+  bottom: -10px;
+}
+.aboutSection::after{
+  right: -10px;
+  top: -10px;
+}
+.aboutSection h5{
+  line-height: 30px;
+}
+/* .dashed-border {
   border: 2px dashed #ccc;
   padding: 40px;
   position: relative;
@@ -278,7 +325,7 @@ align-items: center;
   width: 20px;
   text-align: center;
   font-size: 14px;
-}
+} */
 
 .directorBox {
   height: 350px;
@@ -304,11 +351,20 @@ align-items: center;
   section.aboutus {
     overflow: hidden;
   }
+  .directorBox {
+    height: 250px;
+    width: 250px;
+    position: relative;
+  }
+  .directorBox::after {
+    height: 250px;
+    width: 250px;
+  }
 }
 @media (min-width: 501px) and (max-width: 768px) {
-  .dashed-border {
+  /* .dashed-border {
     height: 300px;
-  }
+  } */
 }
 /* ////////////////////////////////////// SERVICE ////////////////////////////////  */
 .service .dotted-line {
@@ -329,9 +385,9 @@ align-items: center;
   padding: 50px 0;
 }
 .upDownImg img {
-  height: 200px;
-  width: 200px;
-  margin: 10px;
+  height: 220px;
+  width: 220px;
+  margin: 15px;
 }
 .upDownImg img:nth-of-type(even) {
   transform: translateY(50px);
