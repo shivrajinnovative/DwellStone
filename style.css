@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Flamenco&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
 body {
   font-family: "Cabin", sans-serif;
   font-optical-sizing: auto;
@@ -13,8 +13,8 @@ body {
 .bg-secondary {
   background-color: #fff8f8 !important;
 }
-.bg-gray{
-  background-color:#F8F8F8 !important;
+.bg-gray {
+  background-color: #f8f8f8 !important;
   z-index: -99;
 }
 .bg-dark {
@@ -31,7 +31,7 @@ body {
 .fw-400 {
   font-weight: 400;
 }
-.text-justify{
+.text-justify {
   text-align: justify;
 }
 p {
@@ -46,9 +46,7 @@ header .logo {
   align-items: center;
 }
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./asset/background/header.png");
-  background-size: cover;
+  background: #8a4a42;
   background-position: center;
   padding: 100px 0;
 }
@@ -68,30 +66,49 @@ header {
   box-shadow: 0 5px 10px -5px black;
   --bs-navbar-toggler-border-color: none;
 }
-.navbar .nav-item{
+.navbar .nav-item {
   padding: 0 20px;
   font-weight: 700;
 }
-.animateBtn{
+.animateBtn {
   animation: animateBtn 3s linear infinite;
 }
-@keyframes animateBtn{
-  0%{transform: rotate(0deg);}
-  28%{transform: rotate(0deg)scale(1);}
-  30%{transform: rotate(10deg)scale(1.2);}
-  32%{transform: rotate(0deg)scale(1.2);}
-  34%{transform: rotate(-10deg)scale(1.2);}
-  36%{transform: rotate(0deg) scale(1);}
-  90%{transform: rotate(0deg);}
-  100%{transform: rotate(0deg);}
+@keyframes animateBtn {
+  0% {
+    transform: rotate(0deg);
+  }
+  28% {
+    transform: rotate(0deg) scale(1);
+  }
+  30% {
+    transform: rotate(5deg) scale(1.05);
+  }
+  32% {
+    transform: rotate(0deg) scale(1.05);
+  }
+  34% {
+    transform: rotate(-5deg) scale(1.05);
+  }
+  36% {
+    transform: rotate(0deg) scale(1);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-
+.fs-20 {
+  font-size: 20px;
+}
+.fs-18 {
+  font-size: 18px;
+}
 @media (max-width: 768px) {
-  
-  
-.navbar .nav-item{
-  padding: 0 10px;
-}
+  .navbar .nav-item {
+    padding: 0 10px;
+  }
 }
 @media (max-width: 500px) {
   .heading {
@@ -122,7 +139,7 @@ header {
 .about p {
   text-align: justify;
 }
-.about h4{
+.about h4 {
   font-family: "Flamenco", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -175,7 +192,8 @@ header {
   border-radius: 0 0 30px 0;
 }
 .about {
-  background: linear-gradient(rgba(138, 74, 66, 0.9), rgba(138, 74, 66, 0.9)),url("./asset/background/blueprint.png");
+  background: linear-gradient(rgba(138, 74, 66, 0.9), rgba(138, 74, 66, 0.9)),
+    url("./asset/background/blueprint.png");
   background-size: 100% 100%;
 }
 .aboutImg {
@@ -185,27 +203,29 @@ header {
   right: 10%;
   bottom: -13%;
 }
-.galleryCard{
+.galleryCard {
+  display: block;
   height: 350px;
   width: 240px;
   background-size: 100% 100%;
   position: relative;
 }
-.galleryCard .galleryCardFooter{
-position: absolute;
-background-color:rgba(115, 54, 46, 0.8);
-bottom: 0;
-width: 100%;
-padding:0 20px;
-text-align: center;
-color: white;
-height: 60px;
-font-size: 16px ;
-display: flex;
-align-items: center;
+.galleryCard .galleryCardFooter {
+  position: absolute;
+  background-color: rgba(115, 54, 46, 0.8);
+  bottom: 0;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  color: white;
+  height: 60px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 
-.custom-prev, .custom-next {
+.custom-prev,
+.custom-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -216,7 +236,8 @@ align-items: center;
   border-radius: 50%;
   box-shadow: 0 0 10px -5px gray;
 }
-.custom-prev:hover, .custom-next:hover{
+.custom-prev:hover,
+.custom-next:hover {
   background: #bbbbbb;
 }
 .custom-prev {
@@ -229,8 +250,8 @@ align-items: center;
   .serviceCard {
     height: 150px !important;
   }
- .carousel-caption {
-  left: 3rem;
+  .carousel-caption {
+    left: 3rem;
   }
 }
 @media (max-width: 768px) {
@@ -265,38 +286,39 @@ align-items: center;
   .serviceOffering div:nth-child(5) .serviceCard {
     border-radius: 0 0 30px 30px;
   }
-  .galleryCard{
+  .galleryCard {
     height: 350px;
     width: 220px;
     margin: auto;
   }
 }
 /* ///////////////////////////////// ABOUT PAGE /////////////////////////////////////////// */
-.aboutSection{
-  background-color: #F8F8F8;
+.aboutSection {
+  background-color: #f8f8f8;
   font-family: "Calistoga", serif;
   font-weight: 400;
   font-style: normal;
   position: relative;
 }
-.aboutSection::before,.aboutSection::after{
+.aboutSection::before,
+.aboutSection::after {
   content: "";
   display: block;
-position: absolute;
-height: 100px;
-width: 100px;
-background-color: #8a4a42;
-z-index: -1;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: #8a4a42;
+  z-index: -1;
 }
-.aboutSection::before{
+.aboutSection::before {
   left: -10px;
   bottom: -10px;
 }
-.aboutSection::after{
+.aboutSection::after {
   right: -10px;
   top: -10px;
 }
-.aboutSection h5{
+.aboutSection h5 {
   line-height: 30px;
 }
 .directorBox {
@@ -319,15 +341,20 @@ z-index: -1;
 .second.directorBox::after {
   left: 35px;
 }
-.registerWith{
-  height: 300px;
-  width: 300px;
+.registerWith {
+  height: 200px;
+  width: 200px;
   background-color: white;
   box-shadow: 0 0 10px -5px rgb(95, 95, 95);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+}
+.registerWith img {
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
 }
 @media (max-width: 500px) {
   section.aboutus {
@@ -342,19 +369,16 @@ z-index: -1;
     height: 250px;
     width: 250px;
   }
-  .registerWith{
-    height:120px ;
-    width:120px ;
-  }
-  .registerWith img{
-    height: 80%;
-    width: 80%;
+  .registerWith {
+    height: 120px;
+    width: 120px;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
-  /* .dashed-border {
-    height: 300px;
-  } */
+  .registerWith {
+    height: 180px;
+    width: 180px;
+  }
 }
 /* ////////////////////////////////////// SERVICE ////////////////////////////////  */
 .service .dotted-line {
@@ -438,12 +462,12 @@ z-index: -1;
   height: 100px;
   box-shadow: 0 0 1px black;
 }
-.contactPage img{
+.contactPage img {
   width: 50px;
   height: 50px;
-  margin: 20px 0 ;
+  margin: 20px 0;
 }
-.contactPage h2{
+.contactPage h2 {
   font-weight: 600;
 }
 @media (max-width: 500px) {
@@ -457,22 +481,23 @@ z-index: -1;
   border-radius: 5px;
   box-shadow: 0 0 4px -3px gray;
 }
-.quoteForm .row{
+.quoteForm .row {
   overflow: hidden;
 }
 .form-floating input {
   border: none;
   height: 30px !important;
-  padding:0 10px !important ;
-  min-height:48px !important;
+  padding: 0 10px !important ;
+  min-height: 48px !important;
   box-shadow: 0 0 1px black;
   border-radius: 2px;
   margin: 5px 0;
   border-radius: 0px;
 }
-.form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
-  color: rgba(var(--bs-body-color-rgb), .65);
-  transform: scale(.85) translateY(-2rem) translateX(.15rem);
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  color: rgba(var(--bs-body-color-rgb), 0.65);
+  transform: scale(0.85) translateY(-2rem) translateX(0.15rem);
 }
 .form-floating label {
   margin-left: 10px;
@@ -507,12 +532,12 @@ z-index: -1;
   user-select: none;
 }
 
-.multiple .tickmark{
+.multiple .tickmark {
   padding-top: 0px;
   padding-left: 8px !important;
 }
-.multiple2 .tickmark{
-  padding: 0px !important; 
+.multiple2 .tickmark {
+  padding: 0px !important;
 }
 
 .tickmark input {
@@ -530,7 +555,7 @@ z-index: -1;
   height: 30px;
   width: 30px;
   background: white;
-  border:2px solid #b1b1b1;
+  border: 2px solid #b1b1b1;
   border-radius: 5px;
 }
 
@@ -543,8 +568,8 @@ z-index: -1;
 }
 
 .tickmark input:checked ~ .checkmark {
-  background-color: #2196F3;
-  border-color: #2196F3;
+  background-color: #2196f3;
+  border-color: #2196f3;
 }
 
 .checkmark:after {
@@ -574,4 +599,3 @@ z-index: -1;
     transform: scale(1);
   }
 }
-

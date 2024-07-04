@@ -1,3 +1,4 @@
+
 window.onscroll = function() {
     var navbar = document.querySelector(".navbar");
     var scrollThreshold = window.innerWidth < 500 ? 80 : 100;
@@ -12,3 +13,4 @@ window.onscroll = function() {
         navbar.style.top = 0;
     }
 };
+
