@@ -337,12 +337,12 @@ header {
   width: 350px;
   position: absolute;
   background-color: #8a4a42;
-  left: -35px;
-  top: -35px;
+  left: -25px;
+  top: -25px;
   z-index: -1;
 }
 .second.directorBox::after {
-  left: 35px;
+  left: 25px;
 }
 .registerWith {
   height: 200px;
