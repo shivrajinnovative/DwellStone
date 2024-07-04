@@ -99,9 +99,6 @@ header {
     transform: rotate(0deg);
   }
 }
-.fs-20 {
-  font-size: 20px;
-}
 .fs-18 {
   font-size: 18px;
 }
@@ -119,6 +116,12 @@ header {
   .navbar {
     left: 0 !important;
   }
+}
+.lightbox .lb-image {
+  border: none !important;
+}
+.lb-data .lb-close {
+  background-size: 50% 50%;
 }
 /* ////////////////////////////////// INDEX PAGE //////////////////////////////  */
 .hero h1 {
