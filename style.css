@@ -48,7 +48,7 @@ header .logo {
 .hero {
   background: #8a4a42;
   background-position: center;
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
 }
 .heading {
   background-color: #8a4a42;
@@ -116,6 +116,9 @@ header {
   .navbar {
     left: 0 !important;
   }
+  .carousel{
+      margin-top: 80px;
+  } 
 }
 .lightbox .lb-image {
   border: none !important;
@@ -128,16 +131,6 @@ header {
   font-size: 55px;
   font-family: "DM Sans", sans-serif;
   letter-spacing: 2px;
-}
-.carousel-item img {
-  height: 500px;
-  object-fit: cover;
-}
-.carousel-caption {
-  top: 10rem;
-  text-align: start;
-  width: 40%;
-  left: 9rem;
 }
 .about p {
   text-align: justify;
@@ -221,7 +214,7 @@ header {
   padding: 0 20px;
   text-align: center;
   color: white;
-  height: 60px;
+  height: 40px;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -253,18 +246,10 @@ header {
   .serviceCard {
     height: 150px !important;
   }
-  .carousel-caption {
-    left: 3rem;
-  }
 }
 @media (max-width: 768px) {
   header .logo {
     height: 70px;
-  }
-  .carousel-caption {
-    top: 9rem;
-    text-align: start;
-    width: 60%;
   }
   .serviceCard {
     height: 250px;
@@ -356,8 +341,8 @@ header {
 }
 .registerWith img {
   height: 80%;
-  width: 80%;
-  object-fit: cover;
+  width: 90%;
+  object-fit: fit;
 }
 @media (max-width: 500px) {
   section.aboutus {
