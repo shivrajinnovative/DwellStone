@@ -65,6 +65,8 @@ header {
   z-index: 999;
   box-shadow: 0 5px 10px -5px black;
   --bs-navbar-toggler-border-color: none;
+  --bs-navbar-toggler-padding-x:0;
+  --bs-navbar-toggler-padding-y:0;
 }
 .navbar .nav-item {
   padding: 0 20px;
@@ -586,4 +588,15 @@ header {
   .quoteForm input[type="checkbox"] {
     transform: scale(1);
   }
+}
+
+.navbar{
+  padding-top: 0;
+}
+.fa-whatsapp{
+    height:50px;
+    width:50px;
+    line-height:50px;
+    text-align:center;
+    border-radius:50%;
 }
